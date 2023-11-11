@@ -17,7 +17,7 @@ export default {
         'interactive-accent': '#9FE870',
         'interactive-hover': '#80E142',
         'interactive-secondary': '#868685',
-        'background-neutral': '#16330014',
+        'background-neutral': '#ECEFEB',
         'border-neutral': '#0E0F0C1F',
         'base-dark': '#121511',
       },

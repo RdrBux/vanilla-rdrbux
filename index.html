@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,19 +19,19 @@
     <div class="fixed z-50 bottom-12 left-1/2 -translate-x-1/2">
       <nav>
         <ul
-          class="flex justify-center bg-interactive-accent backdrop-blur-lg px-4 rounded-full font-semibold text-content-link"
+          class="flex justify-center bg-interactive-secondary/30 backdrop-blur-lg p-1 rounded-full font-semibold text-base-dark"
         >
           <li>
-            <a class="py-4 px-3 block" href="#home"> Inicio </a>
+            <a class="p-3 block bg-white rounded-full" href="#home"> Inicio </a>
           </li>
           <li>
-            <a class="py-4 px-3 block" href="#work"> Proyectos </a>
+            <a class="p-3 block" href="#work"> Proyectos </a>
           </li>
           <li>
-            <a class="py-4 px-3 block whitespace-nowrap" href="#"> Sobre mí </a>
+            <a class="p-3 block whitespace-nowrap" href="#"> Sobre mí </a>
           </li>
           <li>
-            <a class="py-4 px-3 block" href="#contact"> Contacto </a>
+            <a class="p-3 block" href="#contact"> Contacto </a>
           </li>
         </ul>
       </nav>
@@ -89,9 +89,9 @@
     </main>
 
     <!-- Contacto -->
-    <section id="contact" class="bg-background-neutral text-content-secondary">
+    <section id="contact" class="bg-lightgreen text-darkgreen">
       <div
-        class="container mx-auto py-40 px-4 grid lg:grid-cols-2 gap-20 lg:gap-40"
+        class="container items-center mx-auto py-40 px-4 grid lg:grid-cols-2 gap-20 lg:gap-40"
       >
         <div class="">
           <h2 class="text-7xl tracking-tighter font-bold text-darkgreen">
@@ -198,21 +198,23 @@
           </ul>
         </div>
 
-        <div class="px-10">
-          <h3 class="text-5xl font-bebas">Enviar un mensaje</h3>
+        <div class="p-10 bg-white rounded-3xl">
+          <h3 class="text-4xl font-semibold tracking-tighter text-base-dark">
+            Enviar un mensaje
+          </h3>
           <form class="grid gap-6 mt-6">
             <div class="relative z-0 w-full group">
               <input
                 type="text"
                 name="name"
                 id="name"
-                class="block p-2.5 w-full text-sm bg-transparent border-2 rounded-lg border-interactive-secondary appearance-none focus:border-interactive-accent focus:outline-none focus:ring-0 peer"
+                class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-interactive-secondary appearance-none focus:outline-2 focus:outline-darkgreen focus:ring-0 peer"
                 placeholder=" "
                 required
               />
               <label
-                htmlFor="name"
-                class="mx-3.5 px-1 bg-background-neutral z-10 peer-focus:font-medium absolute text-sm text-stone-400 duration-300 transform -translate-y-[22px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-lime-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[22px]"
+                for="name"
+                class="mx-3.5 px-1 bg-white z-10 peer-focus:font-medium absolute text-lg text-interactive-secondary duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-darkgreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
               >
                 Nombre
               </label>
@@ -223,13 +225,13 @@
                 type="email"
                 name="email"
                 id="email"
-                class="block p-2.5 w-full text-sm bg-transparent border-2 rounded-lg border-stone-600 appearance-none focus:border-lime-500 focus:outline-none focus:ring-0 peer"
+                class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-interactive-secondary appearance-none focus:outline-2 focus:outline-darkgreen focus:ring-0 peer"
                 placeholder=" "
                 required
               />
               <label
-                htmlFor="email"
-                class="mx-3.5 px-1 bg-stone-900 z-10 peer-focus:font-medium absolute text-sm text-stone-400 duration-300 transform -translate-y-[22px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-lime-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[22px]"
+                for="email"
+                class="mx-3.5 px-1 bg-white z-10 peer-focus:font-medium absolute text-lg text-interactive-secondary duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-darkgreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
               >
                 Email
               </label>
@@ -238,14 +240,14 @@
               <textarea
                 name="message"
                 id="message"
-                class="block p-2.5 w-full text-sm bg-transparent border-2 rounded-lg border-stone-600 appearance-none focus:border-lime-500 focus:outline-none focus:ring-0 peer"
+                class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-interactive-secondary appearance-none focus:outline-2 focus:outline-darkgreen focus:ring-0 peer"
                 placeholder=" "
                 rows="{4}"
                 required
               ></textarea>
               <label
-                htmlFor="message"
-                class="mx-3.5 px-1 bg-stone-900 z-10 peer-focus:font-medium absolute text-sm text-stone-400 duration-300 transform -translate-y-[22px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-lime-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[22px]"
+                for="message"
+                class="mx-3.5 px-1 bg-white z-10 peer-focus:font-medium absolute text-lg text-interactive-secondary duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-darkgreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
               >
                 Mensaje
               </label>
@@ -253,7 +255,7 @@
 
             <button
               type="submit"
-              class="text-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-lime-600 hover:bg-lime-700 focus:ring-lime-800"
+              class="text-darkgreen focus:ring-4 focus:outline-none font-bold rounded-full w-full sm:w-auto px-5 py-3 text-center bg-interactive-accent hover:bg-interactive-hover focus:ring-darkgreen"
             >
               Enviar
             </button>
