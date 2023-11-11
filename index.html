@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body class="bg-white text-content-primary">
+    <!-- <div id="app"></div> -->
+
+    <!-- Navbar -->
+    <div class="fixed z-50 bottom-12 left-1/2 -translate-x-1/2">
+      <nav>
+        <ul
+          class="flex justify-center bg-interactive-accent backdrop-blur-lg px-4 rounded-full font-semibold text-content-link"
+        >
+          <li>
+            <a class="py-4 px-3 block" href="#home"> Inicio </a>
+          </li>
+          <li>
+            <a class="py-4 px-3 block" href="#work"> Proyectos </a>
+          </li>
+          <li>
+            <a class="py-4 px-3 block whitespace-nowrap" href="#"> Sobre mí </a>
+          </li>
+          <li>
+            <a class="py-4 px-3 block" href="#contact"> Contacto </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <main id="home" class="container mx-auto px-4">
+      <!-- Hero -->
+      <header>
+        <h1 class="font-bold text-[20vw] text-center">RDRBUX</h1>
+      </header>
+
+      <p class="py-20 text-center text-content-secondary lg:pt-0 text-lg">
+        ¡Hola! Soy Rodrigo Rodríguez Buxman, un Desarrollador <br />
+        Frontend apasionado por la creación de experiencias <br />
+        digitales únicas
+      </p>
+
+      <!-- Work -->
+      <section id="work" class="flex flex-col gap-20">
+        <a href="block">
+          <div
+            class="w-full h-[90vh] bg-gray-300 rounded-3xl flex flex-col justify-end overflow-hidden"
+          >
+            <div
+              class="bg-gradient-to-t from-stone-500/50 to-transparent px-8 py-4"
+            >
+              <div class="text-white">
+                <h2 class="font-semibold">COPY SAVER</h2>
+                <p class="text-sm">
+                  La extensión de Chrome que incrementará tu productividad
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="block">
+          <div
+            class="w-full h-[90vh] bg-gray-300 rounded-3xl flex flex-col justify-end overflow-hidden"
+          >
+            <div
+              class="bg-gradient-to-t from-stone-500/50 to-transparent px-8 py-4"
+            >
+              <div class="text-white">
+                <h2 class="font-semibold">COPY SAVER</h2>
+                <p class="text-sm">
+                  La extensión de Chrome que incrementará tu productividad
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+
+    <!-- Contacto -->
+    <section id="contact" class="bg-background-neutral text-content-secondary">
+      <div
+        class="container mx-auto py-40 px-4 grid lg:grid-cols-2 gap-20 lg:gap-40"
+      >
+        <div class="">
+          <h2 class="text-7xl tracking-tighter font-bold text-darkgreen">
+            Contacto
+          </h2>
+
+          <ul class="text-2xl mt-10 text-content-link">
+            <li>
+              <a
+                href="mailto:rdrbux@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex justify-between items-center py-2 border-b border-border-neutral"
+              >
+                Email
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rdrbux/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex justify-between items-center py-2 border-b border-border-neutral"
+              >
+                LinkedIn
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/RdrBux"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex justify-between items-center py-2 border-b border-border-neutral"
+              >
+                GitHub
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex justify-between items-center py-2 border-b border-border-neutral"
+              >
+                Curriculum Vitae
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="px-10">
+          <h3 class="text-5xl font-bebas">Enviar un mensaje</h3>
+          <form class="grid gap-6 mt-6">
+            <div class="relative z-0 w-full group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block p-2.5 w-full text-sm bg-transparent border-2 rounded-lg border-interactive-secondary appearance-none focus:border-interactive-accent focus:outline-none focus:ring-0 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                htmlFor="name"
+                class="mx-3.5 px-1 bg-background-neutral z-10 peer-focus:font-medium absolute text-sm text-stone-400 duration-300 transform -translate-y-[22px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-lime-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[22px]"
+              >
+                Nombre
+              </label>
+            </div>
+
+            <div class="relative z-0 w-full group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="block p-2.5 w-full text-sm bg-transparent border-2 rounded-lg border-stone-600 appearance-none focus:border-lime-500 focus:outline-none focus:ring-0 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                htmlFor="email"
+                class="mx-3.5 px-1 bg-stone-900 z-10 peer-focus:font-medium absolute text-sm text-stone-400 duration-300 transform -translate-y-[22px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-lime-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[22px]"
+              >
+                Email
+              </label>
+            </div>
+            <div class="relative z-0 w-full group">
+              <textarea
+                name="message"
+                id="message"
+                class="block p-2.5 w-full text-sm bg-transparent border-2 rounded-lg border-stone-600 appearance-none focus:border-lime-500 focus:outline-none focus:ring-0 peer"
+                placeholder=" "
+                rows="{4}"
+                required
+              ></textarea>
+              <label
+                htmlFor="message"
+                class="mx-3.5 px-1 bg-stone-900 z-10 peer-focus:font-medium absolute text-sm text-stone-400 duration-300 transform -translate-y-[22px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-lime-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[22px]"
+              >
+                Mensaje
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="text-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-lime-600 hover:bg-lime-700 focus:ring-lime-800"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
