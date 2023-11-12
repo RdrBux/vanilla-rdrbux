@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        heading: ['ws', 'Inter', 'sans-serif'],
       },
       colors: {
         lightgreen: '#9FE870',
