@@ -7,6 +7,10 @@
   src: url('/ws.ttf');
 }
 
+html {
+  font-size: 16px;
+}
+
 html.lenis {
   height: auto;
 }

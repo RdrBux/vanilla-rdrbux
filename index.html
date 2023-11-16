@@ -12,20 +12,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Rodrigo Rodríguez Buxman | Desarrollador Frontend</title>
   </head>
   <body class="bg-black text-white">
-    <div class="absolute inset-0 radial"></div>
+    <div class="-z-10 absolute inset-0 radial"></div>
 
     <!-- Navbar -->
     <div class="fixed z-50 bottom-12 left-1/2 -translate-x-1/2">
       <nav
-        class="mt-4 backdrop-blur-md bg-gradient-to-br p-1 from-zinc-700/60 to-zinc-900/30 rounded-2xl border border-zinc-500/20 shadow-[0_4px_6px_0_rgba(0,0,0,.05),_0_10px_16px_-3px_rgba(0,0,0,.1)]"
+        class="text-sm lg:text-base mt-4 backdrop-blur-md bg-zinc-700/50 p-1 rounded-2xl shadow-[0_4px_6px_0_rgba(0,0,0,.05),_0_10px_16px_-3px_rgba(0,0,0,.1)]"
       >
         <ul class="flex justify-center text-zinc-100/80">
           <li>
             <a
-              class="p-3 block rounded-2xl hover:bg-zinc-300/10 duration-200"
+              class="p-3 block rounded-xl hover:bg-zinc-900/30 duration-200"
               href="#home"
             >
               Inicio
@@ -33,7 +33,7 @@
           </li>
           <li>
             <a
-              class="p-3 block rounded-2xl hover:bg-zinc-300/10 duration-200"
+              class="p-3 block rounded-xl hover:bg-zinc-900/30 duration-200"
               href="#work"
             >
               Proyectos
@@ -41,7 +41,7 @@
           </li>
           <li>
             <a
-              class="p-3 block rounded-2xl hover:bg-zinc-300/10 duration-200 whitespace-nowrap"
+              class="p-3 block rounded-xl hover:bg-zinc-900/30 duration-200 whitespace-nowrap"
               href="#"
             >
               Sobre mí
@@ -49,7 +49,7 @@
           </li>
           <li>
             <a
-              class="p-3 block rounded-2xl hover:bg-zinc-300/10 duration-200"
+              class="p-3 block rounded-xl hover:bg-zinc-900/30 duration-200"
               href="#contact"
             >
               Contacto
@@ -61,10 +61,10 @@
 
     <!-- Hero -->
     <header
-      class="fixed top-8 left-1/2 -translate-x-1/2 flex gap-[1.1vw] justify-center overflow-hidden"
+      class="fixed z-10 top-8 w-full flex gap-[1.1vw] justify-center overflow-hidden"
     >
-      <div class="small-container | absolute gap-0.5 flex overflow-hidden">
-        <div class="smletter translate-y-full">
+      <div class="small-container | fixed gap-0.5 flex overflow-hidden">
+        <div class="smletter translate-y-[150%]">
           <svg
             class="w-4"
             xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@
 
       <div class="letter">
         <svg
-          class="w-[12vw] lg:w-[9vw]"
+          class="w-[13vw] lg:w-[9vw]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 163.72 378.49"
@@ -173,7 +173,7 @@
       </div>
       <div class="letter">
         <svg
-          class="w-[12vw] lg:w-[9vw]"
+          class="w-[13vw] lg:w-[9vw]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 163.72 378.49"
@@ -188,7 +188,7 @@
       </div>
       <div class="letter">
         <svg
-          class="w-[12vw] lg:w-[9vw]"
+          class="w-[13vw] lg:w-[9vw]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 163.72 378.49"
@@ -203,7 +203,7 @@
       </div>
       <div class="letter">
         <svg
-          class="w-[12vw] lg:w-[9vw]"
+          class="w-[13vw] lg:w-[9vw]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 163.72 378.49"
@@ -218,7 +218,7 @@
       </div>
       <div class="letter">
         <svg
-          class="w-[12vw] lg:w-[9vw]"
+          class="w-[13vw] lg:w-[9vw]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 163.72 378.49"
@@ -233,7 +233,7 @@
       </div>
       <div class="letter">
         <svg
-          class="w-[12vw] lg:w-[9vw]"
+          class="w-[13vw] lg:w-[9vw]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 163.72 378.49"
@@ -253,7 +253,7 @@
       <div class="container mx-auto px-4 pb-20">
         <div class="h-[80vh] lg:h-screen flex flex-col justify-end">
           <p
-            class="pb-64 lg:pb-32 text-center text-neutral-400 text-lg lg:text-2xl"
+            class="pb-32 lg:pb-32 text-center text-neutral-400 text-lg lg:text-2xl"
           >
             ¡Hola! Soy Rodrigo Rodríguez Buxman, un Desarrollador
             <br class="hidden lg:block" />
@@ -302,20 +302,22 @@
       </div>
 
       <!-- Contacto -->
-      <section id="contact" class="bg-lightgreen text-darkgreen">
+      <section id="contact" class="bg-dark text-white">
         <div
           class="container items-center mx-auto pt-20 pb-40 px-4 grid lg:grid-cols-2 gap-20 lg:gap-40"
         >
           <div class="">
-            <h2 class="text-7xl lg:text-8xl text-darkgreen">Contacto</h2>
+            <h2 class="text-6xl lg:text-8xl font-semibold text-white">
+              Contacto
+            </h2>
 
-            <ul class="text-2xl mt-10 text-content-link">
+            <ul class="text-2xl mt-10 text-zinc-300">
               <li>
                 <a
                   href="mailto:rdrbux@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex justify-between items-center py-2 border-b border-border-neutral"
+                  class="flex justify-between items-center py-2 border-b border-zinc-700"
                 >
                   Email
                   <svg
@@ -339,7 +341,7 @@
                   href="https://www.linkedin.com/in/rdrbux/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex justify-between items-center py-2 border-b border-border-neutral"
+                  class="flex justify-between items-center py-2 border-b border-zinc-700"
                 >
                   LinkedIn
                   <svg
@@ -363,7 +365,7 @@
                   href="https://github.com/RdrBux"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex justify-between items-center py-2 border-b border-border-neutral"
+                  class="flex justify-between items-center py-2 border-b border-zinc-700"
                 >
                   GitHub
                   <svg
@@ -387,7 +389,7 @@
                   href="https://google.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex justify-between items-center py-2 border-b border-border-neutral"
+                  class="flex justify-between items-center py-2 border-b border-zinc-700"
                 >
                   Curriculum Vitae
                   <svg
@@ -409,10 +411,8 @@
             </ul>
           </div>
 
-          <div
-            class="p-10 bg-white rounded-3xl shadow-[0_15px_0_0] shadow-darkgreen"
-          >
-            <h3 class="text-4xl font-semibold tracking-tighter text-base-dark">
+          <div class="lg:p-10 bg-black rounded-2xl">
+            <h3 class="text-3xl md:text-4xl font-semibold text-zinc-300">
               Enviar un mensaje
             </h3>
             <form class="grid gap-6 mt-6">
@@ -421,13 +421,13 @@
                   type="text"
                   name="name"
                   id="name"
-                  class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-interactive-secondary appearance-none focus:outline-2 focus:outline-darkgreen focus:ring-0 peer"
+                  class="block p-2.5 w-full text-base bg-transparent border rounded-lg border-zinc-500 appearance-none focus:outline-2 focus:outline-white focus:ring-0 peer"
                   placeholder=" "
                   required
                 />
                 <label
                   for="name"
-                  class="mx-3.5 px-1 bg-white z-10 peer-focus:font-medium absolute text-lg text-interactive-secondary duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-darkgreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
+                  class="mx-3.5 px-1 bg-black z-10 peer-focus:font-medium absolute text-base text-zinc-300 duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
                 >
                   Nombre
                 </label>
@@ -438,13 +438,13 @@
                   type="email"
                   name="email"
                   id="email"
-                  class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-interactive-secondary appearance-none focus:outline-2 focus:outline-darkgreen focus:ring-0 peer"
+                  class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-zinc-500 appearance-none focus:outline-2 focus:outline-white focus:ring-0 peer"
                   placeholder=" "
                   required
                 />
                 <label
                   for="email"
-                  class="mx-3.5 px-1 bg-white z-10 peer-focus:font-medium absolute text-lg text-interactive-secondary duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-darkgreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
+                  class="mx-3.5 px-1 bg-black z-10 peer-focus:font-medium absolute text-lg text-zinc-300 duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
                 >
                   Email
                 </label>
@@ -453,14 +453,14 @@
                 <textarea
                   name="message"
                   id="message"
-                  class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-interactive-secondary appearance-none focus:outline-2 focus:outline-darkgreen focus:ring-0 peer"
+                  class="block p-2.5 w-full text-lg bg-transparent border rounded-lg border-zinc-500 appearance-none focus:outline-2 focus:outline-white focus:ring-0 peer"
                   placeholder=" "
                   rows="{4}"
                   required
                 ></textarea>
                 <label
                   for="message"
-                  class="mx-3.5 px-1 bg-white z-10 peer-focus:font-medium absolute text-lg text-interactive-secondary duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-darkgreen peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
+                  class="mx-3.5 px-1 bg-black z-10 peer-focus:font-medium absolute text-lg text-zinc-300 duration-300 transform -translate-y-[26px] scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-[26px]"
                 >
                   Mensaje
                 </label>
@@ -468,7 +468,7 @@
 
               <button
                 type="submit"
-                class="text-darkgreen focus:ring-4 focus:outline-none font-bold rounded-full w-full sm:w-auto px-5 py-3 text-center bg-interactive-accent hover:bg-interactive-hover focus:ring-darkgreen"
+                class="text-white bg-zinc-500 focus:ring-4 focus:outline-none font-bold rounded-lg w-full sm:w-auto px-5 py-3 text-center bg-interactive-accent hover:bg-zinc-600 focus:ring-white"
               >
                 Enviar
               </button>

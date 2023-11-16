@@ -11,6 +11,12 @@ const sectionHeight = 60;
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
 
+  if (scrollY > 350) {
+    header.style.position = 'absolute';
+  } else {
+    header.style.position = 'fixed';
+  }
+
   const orderPairs = [
     [2, 3],
     [1, 4],
@@ -30,13 +36,11 @@ window.addEventListener('scroll', () => {
         const letter = letters[idx];
         gsap.to(letter, {
           y: translateY,
-          zIndex: 1 - moveFactor,
         });
 
         const smallLetter = smallLetters[idx];
         gsap.to(smallLetter, {
           y: translateYsmall,
-          zIndex: 1 - moveFactor,
         });
       });
     } else {
@@ -44,13 +48,11 @@ window.addEventListener('scroll', () => {
         const letter = letters[idx];
         gsap.to(letter, {
           y: 0,
-          zIndex: 1,
         });
 
         const smallLetter = smallLetters[idx];
         gsap.to(smallLetter, {
-          y: '100%',
-          zIndex: 1,
+          y: '150%',
         });
       });
     }
