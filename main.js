@@ -1,7 +1,7 @@
 import './style.css';
 
 const lenis = new Lenis({
-  lerp: 0.075,
+  lerp: 0.05,
 });
 
 /* lenis.on('scroll', (e) => {
