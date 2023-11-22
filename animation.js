@@ -1,4 +1,7 @@
 import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/all';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 const letters = document.querySelectorAll('.letter');
 const smallLetters = document.querySelectorAll('.smletter');
@@ -8,14 +11,11 @@ const heroText = document.querySelector('.hero-text');
 const nav = document.querySelector('nav');
 const navItems = document.querySelectorAll('nav li');
 
-const sectionHeight = 60;
-console.log(letters[0]);
-
+// LOAD ANIMATION
 window.addEventListener('load', init);
 
+const sectionHeight = 60;
 function init() {
-  scroll(0, -1);
-
   const startOrder = [
     [letters[2], letters[3]],
     [letters[1], letters[4]],
@@ -80,6 +80,7 @@ function init() {
     );
 }
 
+// SCROLL ANIMATION
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
 
@@ -101,7 +102,7 @@ window.addEventListener('scroll', () => {
     if (scrollY > startScroll) {
       const moveFactor = Math.min(1, (scrollY - startScroll) / sectionHeight);
 
-      const translateY = -moveFactor * header.offsetHeight - 20;
+      const translateY = -moveFactor * header.offsetHeight - 10;
       const translateYsmall =
         -moveFactor * smallLetterContainer.offsetHeight + 37;
 
@@ -129,5 +130,17 @@ window.addEventListener('scroll', () => {
         });
       });
     }
+  });
+});
+
+// NAVBAR BUTTONS
+const buttons = document.querySelectorAll('nav button');
+
+const ids = ['#home', '#work', '#about', '#contact'];
+
+buttons.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    const id = ids[idx];
+    gsap.to(window, { duration: 1, scrollTo: { y: id } });
   });
 });
