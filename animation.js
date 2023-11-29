@@ -55,7 +55,6 @@ function init() {
       heroText,
       {
         autoAlpha: 0,
-        y: '20%',
         duration: 3,
       },
       1
@@ -67,7 +66,7 @@ function init() {
         scaleX: 0,
         duration: 0.5,
       },
-      1.5
+      1.2
     )
     .from(
       navItems,
@@ -76,7 +75,7 @@ function init() {
         duration: 2,
         stagger: 0.2,
       },
-      1.7
+      1.4
     );
 }
 
