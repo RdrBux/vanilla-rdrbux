@@ -14,7 +14,7 @@ const navItems = document.querySelectorAll('nav li');
 // LOAD ANIMATION
 window.addEventListener('load', init);
 
-const sectionHeight = 60;
+const sectionHeight = 55;
 function init() {
   const startOrder = [
     [letters[2], letters[3]],
@@ -33,29 +33,28 @@ function init() {
   })
     .from(startOrder[0], {
       y: '120%',
-      duration: 2,
+      duration: 1,
     })
     .from(
       startOrder[1],
       {
         y: '120%',
-        duration: 2,
+        duration: 1,
       },
-      '<0.2'
+      '<0.1'
     )
     .from(
       startOrder[2],
       {
         y: '120%',
-        duration: 2,
+        duration: 1,
       },
-      '<0.4'
+      '<0.2'
     )
     .from(
       heroText,
       {
         autoAlpha: 0,
-        duration: 3,
       },
       1
     )
